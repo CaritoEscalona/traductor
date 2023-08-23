@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/activity_main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_background"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="6"
+    android:layout_margin="10dp">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto ingresado:"/>
+      <TextView
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+    <ProgressBar
+      android:id="@+id/progressBar1"
+      style="?android:attr/progressBarStyleLarge"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:layout_gravity="center"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Traducción:"/>
+
+    <TextView
+      android:id="@+id/translated_text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text=""
+      android:textSize="20sp"
+      android:textColor="@color/black"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:orientation="horizontal"
+      android:paddingHorizontal="20dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lenguaje de origen"
+        android:textAlignment="center" />
+
+      <Spinner
+        android:id="@+id/source_language_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:orientation="horizontal"
+      android:paddingHorizontal="20dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lenguaje de destino"
+        android:textAlignment="center" />
+
+      <Spinner
+        android:id="@+id/output_language_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:orientation="vertical"
+      android:paddingHorizontal="20dp">
+    <Button
+      android:id="@+id/translate_button"
+      style="@style/ButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/color_primary"
+      android:soundEffectsEnabled="true"
+      android:layout_margin="3dp"
+      android:text="Ingresar texto" />
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:orientation="vertical"
+      android:paddingHorizontal="20dp">
+    <Button
+      android:id="@+id/save_button"
+      style="@style/ButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/color_primary"
+      android:soundEffectsEnabled="true"
+
+      android:layout_margin="3dp"
+      android:text="Guardar" />
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:orientation="vertical"
+      android:paddingHorizontal="20dp">
+    <Button
+      android:id="@+id/back_to_menu_button"
+      style="@style/ButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/color_primary"
+      android:text="Menu" />
+    </LinearLayout>
+  </LinearLayout>
+
+
+</LinearLayout>

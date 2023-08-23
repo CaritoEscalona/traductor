@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.ProyectoSemestral" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#333333</item>
+        <item name="colorPrimaryDark">#333333</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:windowBackground">@color/color_background_dark</item>
+
+        <!-- Resto de los atributos personalizados del tema -->
+
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Perfil">
+
+    <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="3"
+      android:background="@color/color_background">
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+            <TextView
+              android:id="@+id/source_text"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="Source"
+              android:gravity="center" />
+            <View
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@android:color/black" />
+            <TextView
+              android:id="@+id/target_text"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="Target"
+              android:gravity="center" />
+            <View
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@android:color/black" />
+            <TextView
+              android:id="@+id/original_text"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="Text"
+              android:gravity="center" />
+            <View
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@android:color/black" />
+            <TextView
+              android:id="@+id/translation_text"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="Translation"
+              android:gravity="center" />
+            <View
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@android:color/black" />
+            <Button
+              android:id="@+id/delete_button"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Eliminar"
+              android:textColor="@android:color/white"
+              style="@style/ButtonStyle"
+              android:background="@drawable/boton_redondo"
+              android:gravity="center" />
+        </TableRow>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/black" />
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
